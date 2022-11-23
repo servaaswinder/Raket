@@ -33,6 +33,11 @@ def standaard_data_van_bestand(bestandsnaam):
     Standaard_Tabel['F'] = F_max_Start
     return Standaard_Tabel
 
+def Berekeningen(Standaard_Tabel):
+    Berekening = Standaard_Tabel
+    Berekening['']
+    return Berekening
+
 def test(Standaard_Tabel):
     # print(Standaard_Tabel['Hoogte m'], Standaard_Tabel['F'])
     plt.scatter(Standaard_Tabel['Hoogte km'], Standaard_Tabel['Luchtdruk mBar'])
@@ -41,6 +46,7 @@ def test(Standaard_Tabel):
 def main():
     bestandsnaam = 'Standaard_tabel.xlsx'
     Standaard_Tabel = standaard_data_van_bestand(bestandsnaam)
+    Berekening = Berekeningen(Standaard_Tabel)
     test(Standaard_Tabel)
 
 if __name__ == '__main__':
